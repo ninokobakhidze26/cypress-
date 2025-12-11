@@ -1,8 +1,7 @@
-describe('template spec', () => {
-  it('passes', () => {
+ describe('template spec', () => {
+ it('passes', () => {
     // Test Case 1: Register User
-    cy.visit('https://automationexercise.com')
-    cy.url().should('include', 'automationexercise.com');
+cy.url().should('include', 'automationexercise.com');
 cy.get('a[href="/login"]').click();
 cy.contains('New User Signup!').should('be.visible');
 cy.get('[data-qa="signup-name"]').type('Nino');
@@ -31,8 +30,5 @@ cy.get('[data-qa="continue-button"]').click();
 cy.contains('Logged in as').should('be.visible');
 cy.get('[href="/delete_account"]').click();
 cy.contains('Account Deleted!').should('be.visible');
-cy.get('[data-qa="continue-button"]').click();
-
-
-  })
-})
+cy.get('[data-qa="continue-button"]').click();})
+  }) 
