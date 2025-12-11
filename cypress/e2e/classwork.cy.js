@@ -1,8 +1,5 @@
-
-it('classwork1.cy.js', function() {
-  cy.visit('https://www.automationexercise.com')
-  describe('template spec', () => {
-  it('passes', () => {
+ describe('template spec', () => {
+ it('passes', () => {
     // Test Case 1: Register User
 cy.url().should('include', 'automationexercise.com');
 cy.get('a[href="/login"]').click();
@@ -34,4 +31,4 @@ cy.contains('Logged in as').should('be.visible');
 cy.get('[href="/delete_account"]').click();
 cy.contains('Account Deleted!').should('be.visible');
 cy.get('[data-qa="continue-button"]').click();})
-  }) })
+  }) 
