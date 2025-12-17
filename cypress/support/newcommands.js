@@ -1,7 +1,6 @@
 Cypress.Commands.add('Customer', (loginName, password)=> {
-    cy.visit('https://automationteststore.com/index.php?rt=account/login')
-    cy.get('input[id="loginFrm_loginname"]').type(loginName);
-    cy.get('input[id="loginFrm_password"]').type(password)
-    cy.get('button[title="Login"]').click()
-
+    cy.visit('https://automationexercise.com/login')
+    cy.get('input[data-qa="login-email"]').type(loginName);
+    cy.get('input[data-qa="login-password"]').type(password)
+    cy.get('[data-qa="login-button"]').click()
 })

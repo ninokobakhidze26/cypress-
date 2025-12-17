@@ -55,5 +55,6 @@ describe('homework12', () => {
     cy.Customer("invaliduser@gmail.com", "invalidpassword")
     cy.contains(this.text.error).should('be.visible')
 
+    
  })
 })
