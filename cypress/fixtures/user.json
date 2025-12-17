@@ -1,0 +1,18 @@
+{
+   "signup":{
+    "name":"nino",
+    "email":"username"
+   },
+   "info":{
+    "password":"password",
+    "Firstname":"Nino",
+    "Lastname":"Kobakhidze",
+    "Company":"LLL",
+    "Address":"123 Street",
+    "State":"Georgia",
+    "City":"Tbilisi",
+    "Zipcode":"12345",
+    "MobileNumber":"1234567890"
+
+   }
+}
